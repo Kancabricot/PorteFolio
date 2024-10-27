@@ -1,0 +1,138 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+header .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Encadrement pour chaque section */
+.bordered-section {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 1.8em;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+table {
+    width: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+table p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.2s;
+}
