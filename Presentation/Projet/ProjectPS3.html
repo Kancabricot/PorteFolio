@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tales of the past</title>
+    <title>Présentation du Projet de Jeu</title>
     <link rel="stylesheet" href="../../Style/styleProjects.css">
-
+    <script src="../../JavaScript/scriptPresentationPage.js"></script>
 </head>
 <body>
-<header>
-    <h1>Tales of the past</h1>
-</header>
-<main>
-    <img class="project-image" src="image-projet.jpg" alt="WIP">
-    <h2>Découvrer l'histoire de la statue de Louis XIV situé au centre de la promenade du Peyrou</h2>
-    <p>WIP</p>
-    <h2>Technologies utilisées</h2>
-    <ul>
-        <li>Unity</li>
-        <li>C#</li>
+    <header>
+        <div class="centered-content">
+            <h1> Project name </h1>
+        </div>
+    </header>
 
-    </ul>
-</main>
-<footer>
-    &copy; FONTAN Timothée
-</footer>
+    <!-- Boutons de navigation latéraux -->
+    <div class="side-buttons">
+        <!-- page précedante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
+        <!-- page suivante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
+    </div>
+
+    <!-- Présentation du jeu -->
+    <section class="bordered-section" id="presentation"><h2>Présentation du Jeu</h2>
+        <div class="content-row">
+
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/video_id" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Notre jeu est un RPG d'aventure immersif où le joueur incarne un héros... (texte de présentation).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bordered-section" id="mecanique">
+        <h2>Mécanique créer</h2>
+        <div class="content-row">
+            <div class="text">
+                <p>Dans ce jeu, le joueur peut interagir avec un monde dynamique... (autre partie de présentation).</p>
+            </div>
+            <div class="media">
+                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Outils de Travail -->
+    <section class="bordered-section" id="tools">
+        <h2>Outils de Travail</h2>
+        <p>Pour réaliser ce projet, nous avons utilisé Unity pour le moteur de jeu, Blender pour la modélisation 3D, et Adobe Photoshop pour les textures. Le langage principal de développement est C# pour la logique du jeu et le scripting. Nous avons également utilisé Git pour le contrôle de version et Trello pour la gestion des tâches.</p>
+    </section>
+
+    <!-- Section Apprentissage -->
+    <section class="bordered-section" id="experience">
+        <h2>Ce que le Projet m'a Apporté</h2>
+        <p>Ce projet m'a permis d'améliorer mes compétences en gestion de projet et en développement de jeu. J'ai appris à travailler en équipe, à organiser mon code de manière efficace, et à optimiser les performances du jeu pour une meilleure expérience utilisateur. Ce projet a renforcé ma confiance en mes capacités de développement.</p>
+    </section>
+
+
 </body>
 </html>

@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponge</title>
+    <title>Présentation du Projet de Jeu</title>
     <link rel="stylesheet" href="../../Style/styleProjects.css">
-
+    <script src="../../JavaScript/scriptPresentationPage.js"></script>
 </head>
 <body>
-<header>
-    <h1>Sponge</h1>
-</header>
-<main>
-    <img class="project-image" src="image-projet.jpg" alt="Image du projet">
-    <h2>Projet pour Coeur de ville en lumière de Montpellier 2023 ou l'on joue des éponge devant nétoyer le mur de virus venant le salir !</h2>
-    <p>Un projet super intéressant, car en collaboration avec la ville de Montpellier, nous avons dû créer un jeu à deux joueurs qui a été projeté sur le mur de l'amphithéâtre de l'Agora.</p>
-    <p>Nous avons eu deux semaines pour réaliser ce projet de A à Z, avec des contraintes telles que la projection sur un mur, la petite configuration de l'ordinateur qui le projette, la durée de jeu et le nombre de joueurs également.</p>
-    <p>C'était une expérience qui, malgré le rush constant, était super constructive et amusante à réaliser. C'était un vrai bonheur de voir des enfants jouer et s'amuser avec notre jeu devant nous. De plus, c'était extrêmement gratifiant d'avoir notre jeu projeté sur le mur d'un monument de Montpellier.</p>
-    <p>J'ai principalement mis en place un système de RVT (Runtime Virtual Texturing) pour salir le sol et permettre ensuite de le nettoyer, avec un calcul des points sur la surface nettoyée dans le temps.</p>
-    <h2>Technologies utilisées</h2>
-    <ul>
-        <li>Unreal</li>
-        <li>Blueprint</li>
-    </ul>
-    <h2>Lien vers une interview de midi libre</h2>
-    <a href="https://www.midilibre.fr/2023/11/17/on-voulait-faire-quelque-chose-de-grandiose-quand-coeur-de-ville-en-lumieres-fait-aussi-briller-les-etudiants-montpellierains-11583914.php">
-        Malgré les fautes d'orthographe sur ton nom et prénom...</a>
-</main>
-<footer>
-    &copy; FONTAN Timothée
-</footer>
+    <header>
+        <div class="centered-content">
+            <h1> Project name </h1>
+        </div>
+    </header>
+
+    <!-- Boutons de navigation latéraux -->
+    <div class="side-buttons">
+        <!-- page précedante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
+        <!-- page suivante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
+    </div>
+
+    <!-- Présentation du jeu -->
+    <section class="bordered-section" id="presentation"><h2>Présentation du Jeu</h2>
+        <div class="content-row">
+
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/video_id" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Notre jeu est un RPG d'aventure immersif où le joueur incarne un héros... (texte de présentation).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bordered-section" id="mecanique">
+        <h2>Mécanique créer</h2>
+        <div class="content-row">
+            <div class="text">
+                <p>Dans ce jeu, le joueur peut interagir avec un monde dynamique... (autre partie de présentation).</p>
+            </div>
+            <div class="media">
+                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Outils de Travail -->
+    <section class="bordered-section" id="tools">
+        <h2>Outils de Travail</h2>
+        <p>Pour réaliser ce projet, nous avons utilisé Unity pour le moteur de jeu, Blender pour la modélisation 3D, et Adobe Photoshop pour les textures. Le langage principal de développement est C# pour la logique du jeu et le scripting. Nous avons également utilisé Git pour le contrôle de version et Trello pour la gestion des tâches.</p>
+    </section>
+
+    <!-- Section Apprentissage -->
+    <section class="bordered-section" id="experience">
+        <h2>Ce que le Projet m'a Apporté</h2>
+        <p>Ce projet m'a permis d'améliorer mes compétences en gestion de projet et en développement de jeu. J'ai appris à travailler en équipe, à organiser mon code de manière efficace, et à optimiser les performances du jeu pour une meilleure expérience utilisateur. Ce projet a renforcé ma confiance en mes capacités de développement.</p>
+    </section>
+
+
 </body>
 </html>

@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maze</title>
+    <title>Présentation du Projet de Jeu</title>
     <link rel="stylesheet" href="../../Style/styleProjects.css">
-
+    <script src="../../JavaScript/scriptPresentationPage.js"></script>
 </head>
 <body>
-<header>
-    <h1>Maze</h1>
-</header>
-<main>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QCu2Mbn_P-4?si=7iRta_DJ6OvzGcZQ" frameborder="0" allowfullscreen></iframe>
+    <header>
+        <div class="centered-content">
+            <h1> Project name </h1>
+        </div>
+    </header>
+
+    <!-- Boutons de navigation latéraux -->
+    <div class="side-buttons">
+        <!-- page précedante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
+        <!-- page suivante -->
+        <a href="https://example.com/page-precedente" class="nav-button">❮</a>
     </div>
-    <h2>Défier les ennemis à des mini-jeux pour avancer et sortir du labyrinthe !</h2>
-    <p>Ce jeu a était fait en groupe on a déssider de faire un jeu en ASCII et des carré de coulleur.</p>
-    <p>Je me suis principalement occupé de faire la génération procédurale du labyrinthe avec choix de la taille ou du nombre d'étages,
-        du système de difficulté pour la taille, le nombre d'étages et le nombre d'ennemis, ainsi que de donner la possibilité d'en créer un comme on le souhaite,
-        du placement des ennemis de manière aléatoire,
-        d'un système de "seed" pour avoir un labyrinthe similaire si on utilise la même "seed",
-        et du système de sauvegarde en fichier.</p>
-    <h2>Technologies utilisées</h2>
-    <ul>
-        <li>C++</li>
-    </ul>
-</main>
-<footer>
-    &copy; FONTAN Timothée
-</footer>
+
+    <!-- Présentation du jeu -->
+    <section class="bordered-section" id="presentation"><h2>Présentation du Jeu</h2>
+        <div class="content-row">
+
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/video_id" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Notre jeu est un RPG d'aventure immersif où le joueur incarne un héros... (texte de présentation).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bordered-section" id="mecanique">
+        <h2>Mécanique créer</h2>
+        <div class="content-row">
+            <div class="text">
+                <p>Dans ce jeu, le joueur peut interagir avec un monde dynamique... (autre partie de présentation).</p>
+            </div>
+            <div class="media">
+                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Outils de Travail -->
+    <section class="bordered-section" id="tools">
+        <h2>Outils de Travail</h2>
+        <p>Pour réaliser ce projet, nous avons utilisé Unity pour le moteur de jeu, Blender pour la modélisation 3D, et Adobe Photoshop pour les textures. Le langage principal de développement est C# pour la logique du jeu et le scripting. Nous avons également utilisé Git pour le contrôle de version et Trello pour la gestion des tâches.</p>
+    </section>
+
+    <!-- Section Apprentissage -->
+    <section class="bordered-section" id="experience">
+        <h2>Ce que le Projet m'a Apporté</h2>
+        <p>Ce projet m'a permis d'améliorer mes compétences en gestion de projet et en développement de jeu. J'ai appris à travailler en équipe, à organiser mon code de manière efficace, et à optimiser les performances du jeu pour une meilleure expérience utilisateur. Ce projet a renforcé ma confiance en mes capacités de développement.</p>
+    </section>
+
+
 </body>
 </html>
