@@ -80,20 +80,6 @@ header {
     padding: 0 20px;
 }
 
-    .side-buttons button {
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 1.5em;
-        border-radius: 50%;
-    }
-
-        .side-buttons button:hover {
-            background-color: #555;
-        }
-
 .nav-button {
     background-color: #333;
     color: white;
