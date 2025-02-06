@@ -6,48 +6,204 @@
 }
 
 body {
-    background-color: #f4f4f9;
+    background-image: url('/Images/FondSite_Timothee_02.png');
+    background-color: #97cbdc;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+
+/* TITRE CATEGORIES */
+
+.titleSite {
+    color: white;
+    text-align: center;
+}
+
+/* texte Timothée Fontan haut de page */
+h1{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+/* texte Gameplay programmer haut de page */
+h2 {
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    color: #29ade5;
+}
+
+/* texte Timothée Fontan dans le header à gauche*/
+h4 {
+    text-align: left;
+    margin:0;
+    font-size:2em;
+}
+
+/* Titre nouvelle catégorie */
+h3 {
+    margin: 50px;
+    font-size: 3em;
+}
+
+/* Titre dans une catégorie */
+h4 {
+    margin:20px;
+    font-size:2em;
+    white-space: nowrap;
+}
+
+/* Explication type de jeu */
+h5 {
+    font-size:1.2em;
+    color:lightgrey;
+    font-style: italic;
+    margin:20px;
+    text-align:left;
+}
+
+/* NAVIGATION HEADER */
+
 header {
+    position:fixed;
     width: 100%;
     padding: 20px;
     background-color: #333;
     color: white;
     text-align: center;
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    z-index: 100;
 }
 
-header .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+.headerText {
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 
 nav a {
     margin: 0 15px;
     color: white;
-    text-decoration: none;
     font-size: 1.1em;
+    white-space: nowrap; /* Empêche les retours à la ligne dans les liens */
+    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #29ade5;
+
 }
 
-.centered-content {
+span {
+    color: #29ade5;
+}
+
+/*ABOUT ME */
+
+.aboutMe {
+    background-color: #2d4468;
+    width: 100%;  /* Prend toute la largeur de la fenêtre */
+    padding:80px;
+    display:flex;
+}
+
+.aboutMe img {
+    width: 10%;
+    height: auto;
+    object-fit: contain; /* Garde les proportions sans couper l'image */
+    display: flex;
+    align-items: start;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement (de haut en bas) */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.aboutMe h2 {
+    color: white;
+    font-size: 2em;
+    white-space: nowrap; /* Empêche les retours à la ligne dans les liens */
+    padding-left:3%;
+}
+
+.aboutMe p {
+    text-align: justify;
+    font-size:1.2em;
+    display: flex;
+    padding-left:3%;
+    padding-right:30%;
+    color: white;
+}
+
+/* Section Projet en cours */
+
+.largeProject{
+    display: flex;
+    width:70%;
+    background-color:white;
+    position: relative;
+}
+
+.largeProject:hover{
+    transform: scale(1.02);
+    transition-duration: 0.4s;
+}
+
+.box {
+    width: 50%; /* Chaque élément prend 50% de l'espace */
+    display: flex;
+    background-color:#004581;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    position:relative;
+}
+
+.image-box{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: auto; /* Hauteur fixe du conteneur */
+    overflow: hidden; /* Cache tout ce qui dépasse de la boîte */
+}
+
+.image-box img{
+
+
+}
+
+.text-box {
+    color: white; /* Texte en blanc pour contraste */
+    font-size: 1.5em; /* Taille du texte */
+    text-align: center;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    text-align: justify;
+}
+
+.myRoleList {
+    background: linear-gradient(to bottom, #dde8f0, #018abd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Encadrement pour chaque section */
@@ -89,15 +245,6 @@ nav a:hover {
 }
 
 
-h2 {
-    margin-bottom: 40px;
-    font-size: 1.8em;
-}
-
-h3 {
-    margin-bottom: 20px;
-    font-size: 1.4em;
-}
 
 table {
     width: auto;
@@ -158,4 +305,44 @@ button {
     cursor: pointer;
     position: absolute;
     transition: transform 0.2s;
+}
+
+
+/* PROJECT KEYWORDS */
+.projectKeywords{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+.keywordLanguage {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 2px solid #3498db; /* Couleur de la bordure */
+    border-radius: 5px;
+    background-color: #3498db; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold;
+}
+
+.keywordDevice {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 2px solid #4eb548; /* Couleur de la bordure */
+    border-radius: 5px;
+    background-color: #4EB548FF; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.keywordEngine {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 2px solid #6d2ecc; /* Couleur de la bordure */
+    border-radius: 5px;
+    background-color: #6d2ecc; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold;
 }

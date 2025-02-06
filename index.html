@@ -9,31 +9,77 @@
 <body>
     <!-- Header et navigation centrée -->
     <header>
-        <div class="centered-content">
-            <img src="Images/Profile.jpg" alt="Photo de profil" class="profile-pic">
-            <h2>Timothée Fontan</h2>
-            <p>Gameplay & Tool programmer</p>
-            <br>
-            <br>
+        <div class="headerText">
+            <h4>Timothée Fontan</h4>
+        </div>
             <nav>
                 <a href="#about">À propos de moi</a>
                 <a href="#projects">Projets</a>
                 <a href="#tools">Outils</a>
                 <a href="#contact">Contact</a>
             </nav>
-        </div>
+
     </header>
 
-    <!-- Section À propos centrée -->
-    <section id="about" class="bordered-section">
-        <h2>À propos de moi</h2>
+<!-- Section Nom et Activité -->
+
+    <h1><br>
+        <br>Timothée Fontan</h1>
+    <h2>Gameplay & Tool programmer</h2>
+
+    <!-- Section À propos -->
+    <section id="about" class="aboutMe">
+        <img src="Images/Profile.jpg"/>
+        <div aboutMeText>
+        <h2><span>À propos</span> de moi</h2>
         <p>Je suis un jeune programmeur spécialisé dans le développement de jeux vidéo et la création d'outils pour faciliter le développement. Passionné et curieux, j'ai acquis des compétences en programmation, en design et en optimisation des performances.</p>
+
         <div class="project-section-footer">
             <a href="https://kancabricot.itch.io" class="project-button">Voir tous mes projets</a>
         </div>
+        </div>
     </section>
 
-    <!-- Section Projets centrée -->
+    <!-- Section categorie projets en cours -->
+    <section id id="projects"class="categorie">
+        <h3>Projet <span>en cours</span></h3>
+    </section>
+
+    <!-- Section projets en cours -->
+
+    <div class="largeProject">
+        <div class="box image-box">
+        <img src="Images/ProjetMara.png"/>
+            </div>
+        <div class="box text-box">
+            <h4>Build and Groove</h4>
+            <h5> Rogue like | Deck building</h5>
+            <div class="myRoleList">
+                <p> Mes rôles :
+                <ol>
+                    <li>• GPP</li>
+                    <li>• Tool développer</li>
+                    <li>• Game design </li>
+                    <li>• Gestion de projet</li>
+                    <li>• UX designer</li>
+                    <br>
+                 </ol>
+            </div>
+        </ul>
+            </p>
+            <p>
+                Le but est de ce créer un deck musicale pour anéantir les musique de fêtes lors de son voyage dans leur contré. c'est un jeu en tour par tour ou l'on utilise les carte de notre deck pour affronter des ennemis sur un plateau en grille
+            </p>
+        <br>
+            <div class="projectKeywords">
+            <span class="keywordEngine">Unreal</span>
+                <span class="keywordLanguage">Blueprint</span>
+            <span class="keywordDevice">PC</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Projets -->
     <section id="projects" class="bordered-section">
         <h2>Projets</h2>
         <h3>Projets de jeux</h3>
@@ -43,15 +89,17 @@
                     <!-- Core Defender -->
                     <a href="Presentation/Projet/ProjectCoreDefender.html">
                         <img src="Images/ProjetCoreDefenders.png" alt="Core Defender">
-                        <p>Un jeu de coopération dans un TD a la overcook.</p>
                     </a>
+                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">C++</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
+                    <p>Un jeu de coopération dans un TD a la overcook.</p>
                 </td>
                 <td>
                     <!-- Sponge -->
                     <a href="Presentation/Projet/ProjectSponge.html">
                         <img src="Images/ProjetSponge.png" alt="Projet 2">
-                        <p>Un jeu de coopération sur le mur de l'Agora à Montpellier</p>
                     </a>
+                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
+                    <p>Un jeu de coopération sur le mur de l'Agora à Montpellier</p>
                 </td>
             </tr>
             <tr>
@@ -59,15 +107,17 @@
                     <!-- Mara -->
                     <a href="Presentation/Projet/ProjectMara.html">
                         <img src="Images/ProjetMara.png" alt="Projet 2">
-                        <p>Un jeu d'horreur utilisant une mécanique de non-euclidien.</p>
                     </a>
+                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
+                    <p>Un jeu d'horreur utilisant une mécanique de non-euclidien.</p>
                 </td>
                 <td>
                     <!-- Maze -->
                     <a href="Presentation/Projet/ProjectMaze.html">
                         <img src="Images/ProjetMaze.png" alt="Projet 2">
-                        <p>Un jeu de labyrinthe fait uniquement en cpp sans moteur de jeu.</p>
                     </a>
+                    <p><span class="keywordEngine">Visual Studio</span> <span class="keywordLanguage">C++</span> <span class="keywordDevice">PC</span></p>
+                    <p>Un jeu de labyrinthe fait uniquement en cpp sans moteur de jeu.</p>
                 </td>
             </tr>
             <tr>
@@ -75,8 +125,9 @@
                     <!-- Listrik -->
                     <a href="Presentation/Projet/ProjectListrik.html">
                         <img src="Images/ProjetListrik.png" alt="Projet 2">
-                        <p>Un jeu de platform et d'énigme sur la baterie d'un robot.</p>
                     </a>
+                    <p><span class="keywordEngine">Phaser</span> <span class="keywordLanguage">Java script</span>  <span class="keywordDevice">PC/Web</span></p>
+                    <p>Un jeu de platform et d'énigme sur la baterie d'un robot.</p>
                 </td>
             </tr>
         </table>
