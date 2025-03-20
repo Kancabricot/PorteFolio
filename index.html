@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <!-- Header et navigation centrée -->
     <header>
         <div class="headerText">
-            <h4>Timothée Fontan</h4>
+            <h7>Timothée Fontan</h7>
         </div>
             <nav>
                 <a href="#about">À propos de moi</a>
@@ -25,23 +25,23 @@
 
     <h1><br>
         <br>Timothée Fontan</h1>
-    <h2>Gameplay & Tool programmer</h2>
+    <h2 id="about">Gameplay & Tool programmer</h2>
 
     <!-- Section À propos -->
-    <section id="about" class="aboutMe">
+    <section class="aboutMe">
         <img src="Images/Profile.jpg"/>
-        <div aboutMeText>
-        <h2><span>À propos</span> de moi</h2>
-        <p>Je suis un jeune programmeur spécialisé dans le développement de jeux vidéo et la création d'outils pour faciliter le développement. Passionné et curieux, j'ai acquis des compétences en programmation, en design et en optimisation des performances.</p>
+        <div class="aboutMeText">
+            <h2><span>À propos</span> de moi</h2>
+            <h6>Je suis un jeune programmeur spécialisé dans le développement de jeux vidéo et la création d'outils pour faciliter le développement. Passionné et curieux, j'ai acquis des compétences en programmation, en design et en optimisation des performances.</h6>
 
-        <div class="project-section-footer">
+            <div id="projects" class="project-section-footer">
             <a href="https://kancabricot.itch.io" class="project-button">Voir tous mes projets</a>
-        </div>
+            </div>
         </div>
     </section>
 
     <!-- Section categorie projets en cours -->
-    <section id="projects"class="categorie">
+    <section class="categorie">
         <h3>Projet <span>en cours</span></h3>
     </section>
 
@@ -65,10 +65,9 @@
                     <br>
                  </ol>
             </div>
-        </ul>
             </p>
             <p>
-                Le but est de ce créer un deck musicale pour anéantir les musique de fêtes lors de son voyage dans leur contré. c'est un jeu en tour par tour ou l'on utilise les carte de notre deck pour affronter des ennemis sur un plateau en grille
+                Le but est de se créer un deck musical pour anéantir les musique de fêtes lors de son voyage dans leur contré. c'est un jeu en tour par tour ou l'on utilise les carte de notre deck pour affronter des ennemis sur un plateau en grille
             </p>
         <br>
             <div class="projectKeywords">
@@ -79,96 +78,198 @@
         </div>
     </div>
 
-    <!-- Section Projets -->
-    <section id="projectsold" class="bordered-section">
-        <h2>Projets</h2>
-        <h3>Projets de jeux</h3>
-        <table>
-            <tr>
-                <td>
-                    <!-- Core Defender -->
-                    <a href="Presentation/Projet/ProjectCoreDefender.html">
-                        <img src="Images/ProjetCoreDefenders.png" alt="Core Defender">
-                    </a>
-                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">C++</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
-                    <p>Un jeu de coopération dans un TD a la overcook.</p>
-                </td>
-                <td>
-                    <!-- Sponge -->
-                    <a href="Presentation/Projet/ProjectSponge.html">
-                        <img src="Images/ProjetSponge.png" alt="Projet 2">
-                    </a>
-                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
-                    <p>Un jeu de coopération sur le mur de l'Agora à Montpellier</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Mara -->
-                    <a href="Presentation/Projet/ProjectMara.html">
-                        <img src="Images/ProjetMara.png" alt="Projet 2">
-                    </a>
-                    <p><span class="keywordEngine">Unreal 5</span> <span class="keywordLanguage">blueprint</span> <span class="keywordDevice">PC</span></p>
-                    <p>Un jeu d'horreur utilisant une mécanique de non-euclidien.</p>
-                </td>
-                <td>
-                    <!-- Maze -->
-                    <a href="Presentation/Projet/ProjectMaze.html">
-                        <img src="Images/ProjetMaze.png" alt="Projet 2">
-                    </a>
-                    <p><span class="keywordEngine">Visual Studio</span> <span class="keywordLanguage">C++</span> <span class="keywordDevice">PC</span></p>
-                    <p>Un jeu de labyrinthe fait uniquement en cpp sans moteur de jeu.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Listrik -->
-                    <a href="Presentation/Projet/ProjectListrik.html">
-                        <img src="Images/ProjetListrik.png" alt="Projet 2">
-                    </a>
-                    <p><span class="keywordEngine">Phaser</span> <span class="keywordLanguage">Java script</span>  <span class="keywordDevice">PC/Web</span></p>
-                    <p>Un jeu de platform et d'énigme sur la baterie d'un robot.</p>
-                </td>
-            </tr>
-        </table>
+    <!-- Section categorie projets en cours -->
+    <section class="categorie">
+        <h3>Projets <span> finis </span></h3>
     </section>
 
-    <!-- Section Outils centrée -->
-    <section id="tools" class="bordered-section">
-        <h2>Outils</h2>
-        <h3>WIP</h3>
-        <table>
-            <tr>
-                <td>
-                    <a href="index.html">
-                        <img src="Images/credits.png" alt="Outil 1">
-                        <p>Outil 1.</p>
-                    </a>
-                </td>
-                <td>
-                    <a href="tool2.html">
-                        <img src="Images/credits.png" alt="Outil 2">
-                        <p>Outil 2.</p>
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </section>
+    <!-- Section Core Defenders -->
 
-    <!--
-        <div class="container">
-        <button id="runaway-button">Clique-moi si tu peux !</button>
+    <a href="Presentation/Projet/ProjectCoreDefender.html" class="largeProject">
+
+        <div class="box image-box">
+            <img src="Images/ProjetCoreDefenders_02.png"/>
+        </div>
+
+        <div class="box text-box">
+
+            <h4>Core Defenders</h4>
+            <h5> Party game tower defense</h5>
+            <div class="myRoleList">
+                <p> Mes rôles :
+                    <ol>
+                        <li>• GPP</li>
+                        <li>• Tool développer</li>
+                        <li>• Gestion de projet</li>
+                        <br>
+                    </ol>
+                </p>
+            </div>
+            <p>
+                Le but est avec l'aide de petit slime de protéger la maman slime des Robot venu nous rendre en esclavage. pour cela il faut nourrir les slime avec les débris des ennemis pour créer des kit qui une fois assembler nous font des tourelles.
+            </p>
+            <br>
+            <div class="projectKeywords">
+                <span class="keywordEngine">Unreal</span>
+                <span class="keywordLanguage">Blueprint</span>
+                <span class="keywordLanguage">C++</span>
+                <span class="keywordDevice">PC</span>
+            </div>
+
+        </div>
+    </a>
+
+
+    <!-- Section Projets ligne 1 -->
+    <div class="basicProjectTemplate">
+        <a href="Presentation/Projet/ProjectMara.html" class="basicProjectIn">
+            <div class="box image-box">
+                <img src="Images/ProjetMara.png" height="397" width="296"/>
+            </div>
+            <div class="box image-box">
+                <div class="text-box">
+                    <h4>Mara</h4>
+                    <h5>Horror game</h5>
+                    <div class="myRoleList">
+                        <p> Mes rôles :
+                            <ol>
+                                <li>• Gameplay Programmer</li>
+                                <li>• Game Design</li>
+                                <br>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <p>
+                        Le but est de s'enfuir d'un temple népalais sous l'emprise d'un terrible démons nommée Mara, qui modifie la réalité pour nous enfermé dans un complexe non euclidien.
+                        </br>
+                    </p>
+
+                    <div class="projectKeywords">
+                        <span class="keywordEngine">Unreal 5</span>
+                        <span class="keywordLanguage">Blueprint</span>
+                        <span class="keywordDevice">PC</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="Presentation/Projet/ProjectSponge.html" class="basicProjectIn">
+            <div class="box image-box">
+                <img src="Images/ProjetSponge.PNG">
+            </div>
+            <div class="box image-box">
+                <div class="text-box">
+                    <h4>Sponge</h4>
+                    <h5>Party game - Coeur de ville en lumière</h5>
+                    <div class="myRoleList">
+                        <p>
+                            <ol>
+                                <li>• Gameplay Programmer</li>
+                                <li>• Gestion de projet</li>
+                                <li>• UX Designer</li>
+                                <br>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <p>
+                        Une commande de 2 semaine de Coeur de ville en lumière pour faire un jeu de 3 minutes pour être jouer a 2 sur le mur de l'amphithéâtre de L'agora a Montpellier pour y faire jouer des enfants.
+                        On y joue 2 éponges qui doivent nettoyer le mur et le protéger de virus.
+                    </p>
+                    </br>
+                    <div class="projectKeywords">
+                        <span class="keywordEngine">Unreal</span>
+                        <span class="keywordLanguage">Blueprint</span>
+                        <span class="keywordDevice">PC/Mur</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </a>
     </div>
-    -->
 
-    <!-- Section Contact centrée -->
-    <section id="contact" class="bordered-section">
-        <h2>Contact</h2>
-        <address>
-            <p>Pour me contacter, veuillez envoyer un email à : <a href="timothee.fontan@gmail.com">timothee.fontan@gmail.com</a></p>
-            <p>Ou bien par téléphone : <a href="tel:+33766690473">07-66-69-04-73</a></p>
-        </address>
-    </section>
+
+
+    <!-- Section Projets ligne 2 -->
+
+    <div class="basicProjectTemplate">
+        <a href="Presentation/Projet/ProjectMaze.html" class="basicProjectIn">
+            <div class="box image-box">
+                <img src="Images/ProjetMaze.png"/>
+
+            </div>
+            <div class="box image-box">
+                <div class="text-box">
+                    <h4>Maze</h4>
+                    <h5>2D Party game</h5>
+                    <div class="myRoleList">
+                        <p> Mes rôles :
+                        <ol>
+                            <li>• GPP</li>
+                            <br>
+                        </ol>
+                        </p>
+                    </div>
+
+                    <p>
+                        Pour ce projet nous avions du faire un jeu sans moteur de jeu et sans library graphique, Le jeu consiste a traverser un labyrinthe et d'affronter des mini jeu pour y sortir.
+                    </p>
+                    </br>
+                    <div class="projectKeywords">
+                        <span class="keywordEngine">Visual Studio</span>
+                        <span class="keywordLanguage">C++</span>
+                        <span class="keywordDevice">PC</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="Presentation/Projet/ProjectListrik.html" class="basicProjectIn">
+            <div class="box image-box">
+                <img src="Images/ProjetListrik.png"/>
+            </div>
+            <div class="box image-box">
+                <div class="text-box">
+                    <h4>Listrik</h4>
+                    <h5>2D Plateformer</h5>
+                    <div class="myRoleList">
+                        <p> Projet seul
+                        </p>
+                    </div>
+
+                    <p>
+                        Vous incarnez un petit robot défaillant qui doit tenir ça batterie en main pour pouvoir se charger, il faudra résoudre des énigme mis en place par des scientifiques pour sortir de chaque salles et avancer.
+                    </p>
+                    </br>
+                    <div class="projectKeywords">
+                        <span class="keywordEngine">Phaser</span>
+                        <span class="keywordLanguage">Javascript</span>
+                        <span class="keywordDevice">PC/Web</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- Section Jam -->
+
+    <div class="largeProject">
+        <a href="https://itch.io/c/5351381/jam-projects" class="box text-box">
+            <h4>Jam</h4>
+            <h5> Plusieurs projets faits pendant des games jams qui ont été réalisés avec des gens que je connaissais ou des inconnus.</h5>
+        </a>
+        <div class="box text-box">
+            <h4>Contact</h4>
+            </br>
+            <h6>Pour me contacter, veuillez envoyer un email à : timothee.fontan@gmail.com</h6>
+            </br>
+            <h6>Ou bien par téléphone : 07-66-69-04-73</h6>
+        </div>
+
+    </div>
 
     <script src="JavaScript/script.js"></script>
 </body>

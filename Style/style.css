@@ -27,39 +27,71 @@ body {
 h1{
     color: white;
     text-align: center;
-    font-size: 4em;
+    font:
+        7em "Bebas Neue",
+        sans-serif;
+    font-weight: bold;
+
 }
 
 /* texte Gameplay programmer haut de page */
 h2 {
     margin-bottom: 40px;
-    font-size: 1.8em;
     color: #29ade5;
+    font:
+        2.5em "montserrat",
+        sans-serif;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
 }
 
+
 /* texte Timothée Fontan dans le header à gauche*/
-h4 {
+h7 {
     text-align: left;
     margin:0;
-    font-size:2em;
+    font:
+            2em "Bebas Neue",
+            sans-serif;
+    font-weight: bold;
+}
+
+/* texte paragraphe a propos de moi */
+h6 {
+    font:
+            1.5vw "Montserrat",
+            sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+    color:white;
+
 }
 
 /* Titre nouvelle catégorie */
 h3 {
-    margin: 50px;
-    font-size: 3em;
+    margin: 60px;
+    font:
+            3em "montserrat",
+            sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
-/* Titre dans une catégorie */
+/* Titre dans la catégorie */
 h4 {
     margin:20px;
-    font-size:2em;
+    font:
+            3vw "Bebas Neue",
+            sans-serif;
+    font-weight: bold;
+    text-align: center;
     white-space: nowrap;
 }
 
 /* Explication type de jeu */
 h5 {
-    font-size:1.2em;
+    font-size: clamp(16px, 1.8vw, 48px);
     color:lightgrey;
     font-style: italic;
     margin:20px;
@@ -117,8 +149,10 @@ span {
 .aboutMe {
     background-color: #2d4468;
     width: 100%;  /* Prend toute la largeur de la fenêtre */
-    padding:80px;
+    padding:3vw;
     display:flex;
+    margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 .aboutMe img {
@@ -134,33 +168,33 @@ span {
     flex-direction: column; /* Aligne les éléments verticalement (de haut en bas) */
     justify-content: center; /* Centre les éléments verticalement */
     align-items: center; /* Centre les éléments horizontalement */
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 10vw;
+    margin-right: 20vw;
+
 }
+
 
 .aboutMe h2 {
     color: white;
-    font-size: 2em;
+    font-size: 2vw;
     white-space: nowrap; /* Empêche les retours à la ligne dans les liens */
     padding-left:3%;
 }
 
-.aboutMe p {
-    text-align: justify;
-    font-size:1.2em;
-    display: flex;
-    padding-left:3%;
-    padding-right:30%;
-    color: white;
-}
 
-/* Section Projet en cours */
+
+/* SECTION PROJET EN COURS */
 
 .largeProject{
     display: flex;
     width:70%;
+    height:40%;
     background-color:white;
     position: relative;
+    cursor: pointer;
+    margin-top:2%;
+    margin-bottom:2%;
+    transition: transform 0.4s ease; /* Transition appliquée à la propriété transform */
 }
 
 .largeProject:hover{
@@ -168,32 +202,35 @@ span {
     transition-duration: 0.4s;
 }
 
+
 .box {
     width: 50%; /* Chaque élément prend 50% de l'espace */
     display: flex;
     background-color:#004581;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
     position:relative;
+
 }
 
 .image-box{
     display: flex;
     align-content: center;
     align-items: center;
-    height: auto; /* Hauteur fixe du conteneur */
-    overflow: hidden; /* Cache tout ce qui dépasse de la boîte */
+    height: auto;  /*Hauteur fixe du conteneur*/
+    /* overflow: hidden;  Cache tout ce qui dépasse de la boîte */
 }
 
 .image-box img{
-
-
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    object-fit: contain;
 }
 
 .text-box {
     color: white; /* Texte en blanc pour contraste */
-    font-size: 1.5em; /* Taille du texte */
+    font-size: 1vw; /* Taille du texte */
     text-align: center;
-    padding: 20px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -204,7 +241,11 @@ span {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size:1vw;
 }
+
+
+
 
 /* Encadrement pour chaque section */
 .bordered-section {
@@ -222,10 +263,91 @@ span {
     padding: 20px;
 }
 
+/* SECTION PROJET */
+
+.basicProjectTemplate{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin-bottom: 2%;
+    margin-top:2%;
+}
+
+.basicProjectIn{
+    display:flex;
+    width:48%;
+    height:auto;
+    background-color:white;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden; /* Cache tout ce qui dépasse */
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5); /* box shadow */
+    transition: transform 0.4s ease; /* Transition appliquée à la propriété transform */
+}
+
+.basicProjectIn:hover{
+    transform: scale(1.02);
+    transition-duration: 0.4s;
+}
+
+.basicProjectIn img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    object-fit: cover; /* L'image couvre toute la surface sans déformer, en gardant ses proportions */
+}
+
+.basicProjectIn .image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Cache tout ce qui dépasse */
+    width: 100%;
+    height: 100%;
+}
+
+/*titre*/
+.basicProjectTemplate h4{
+    font-size: clamp(16px, 1.7vw, 48px);
+    text-align: center;
+    margin:unset;
+    margin-bottom: 10px;
+}
+
+
+
+/*sous titre*/
+.basicProjectTemplate h5{
+    font-size: 1.2vw;
+    margin:10px;
+}
+
+
+
+a {
+    display: block;         /* Faire en sorte que le lien occupe toute la largeur du parent */
+    text-decoration: none;  /* Enlever le soulignement par défaut du lien */
+    color: inherit;         /* Garder la couleur du texte de son parent */
+}
+
+a:active {
+    text-decoration: none;  /* Enlever le soulignement lors de l'activation ou du focus */
+    color: inherit;         /* Garder la couleur inchangée */
+}
+
+
+
+
+
+
+
+
+
+
+
 .project-section-footer {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin:2vw;
 }
 
 .project-button {
@@ -312,7 +434,9 @@ button {
 .projectKeywords{
     display: flex;
     justify-content: center;
+    align-items: flex-end; /* aligne les items au bas du conteneur */
     gap:5px;
+    white-space: normal; /* permet un retour a la ligne */
 }
 
 .keywordLanguage {
@@ -346,3 +470,15 @@ button {
     color: #ffffff; /* Couleur du texte */
     font-weight: bold;
 }
+
+
+@media screen and (max-width:1600px){
+    .largeProject{
+        width:90%;
+    }
+
+    .basicProjectTemplate{
+        width:90%;
+    }
+}
+
