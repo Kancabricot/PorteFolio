@@ -6,13 +6,14 @@
 }
 
 body {
-    background-image: url('/Images/FondSite_Timothee_02.png');
+    /*background-image: url('/Images/FondSite_Timothee_02.png');*/
     background-color: #97cbdc;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 
 
@@ -75,7 +76,7 @@ h3 {
             sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-
+    color:white;
 }
 
 /* Titre dans la catégorie */
@@ -130,9 +131,15 @@ nav {
 nav a {
     margin: 0 15px;
     color: white;
-    font-size: 1.1em;
     white-space: nowrap; /* Empêche les retours à la ligne dans les liens */
     text-decoration: none;
+    font:
+            1.1em "montserrat",
+            sans-serif;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+
+
 }
 
 nav a:hover {
@@ -202,6 +209,13 @@ span {
     transition-duration: 0.4s;
 }
 
+.largeProject p {
+        font:
+                1.3vw "Montserrat",
+                sans-serif;
+        font-weight: lighter;
+}
+
 
 .box {
     width: 50%; /* Chaque élément prend 50% de l'espace */
@@ -236,15 +250,20 @@ span {
     text-align: justify;
 }
 
-.myRoleList {
-    background: linear-gradient(to bottom, #dde8f0, #018abd);
+.myRoleList ol {
+    background-color: lightgrey;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:1vw;
+    font-weight:bold;
+    font-family: 'Bebas neue bold', sans-serif;
 }
 
-
+.myRoleList p{
+    color: white;
+    font-weight: bold;
+}
 
 
 /* Encadrement pour chaque section */
@@ -314,13 +333,19 @@ span {
 }
 
 
-
 /*sous titre*/
 .basicProjectTemplate h5{
     font-size: 1.2vw;
     margin:10px;
 }
 
+.basicProjectIn p{
+    font:
+            1vw "Montserrat",
+            sans-serif;
+    font-weight: lighter;
+
+}
 
 
 a {
@@ -335,6 +360,50 @@ a:active {
 }
 
 
+/* JAM */
+
+.jam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:70%;
+    height:30%;
+    background-color:#004581;
+    position: relative;
+    margin-top:2%;
+    margin-bottom:2%;
+    padding:2%;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5); /* box shadow */
+}
+
+.jam h3{
+    color:white;
+    font-size: 3vw;
+    text-align: center;
+    margin:5%;
+}
+
+.jam h5{
+    text-align: center;
+    font-size: 1.3vw;
+    margin:unset;
+}
+
+.jam a{
+    width:15em;
+    font-size:1em;
+    align-self: center;
+    margin:4%;
+}
+
+
+/* CONTACT */
+
+footer {
+    background-color: #333;
+    width: 100%;
+    padding:3vw;
+}
 
 
 
@@ -478,6 +547,10 @@ button {
     }
 
     .basicProjectTemplate{
+        width:90%;
+    }
+
+    .jam{
         width:90%;
     }
 }

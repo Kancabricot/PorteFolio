@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    color:lightgrey;
 }
 
 body, html {
@@ -10,6 +11,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:#97cbdc;
 }
 
 .text h3 {
@@ -22,7 +24,7 @@ header {
     width: 100%;
     padding: 20px;
     background-color: #333;
-    color: white;
+    color: #004581;
     text-align: center;
 }
 
@@ -34,25 +36,22 @@ header {
     }
 
 .centered-section {
-    max-width: 800px;
+    width: 100%;
     margin: 50px auto;
     padding: 20px;
     text-align: center;
 }
 
 .bordered-section {
-    border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
-    background-color: #f4f4f9;
+    background-color: #004581;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 60%;
 }
 
 .content-row {
@@ -159,4 +158,102 @@ header {
     text-align: justify-all;
     width: fit-content;
 }
+
+
+/* Test */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    width:auto;
+}
+
+.item {
+    text-align: center;
+    color: white;
+    width: 150px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 10px auto;
+}
+
+.icon.role { background-color: #004581; color: white; }
+.icon.duration { background-color: white; color: black; }
+.icon.tools { background-color: gray; color: white; }
+.icon.team { background-color: white; color: black; }
+
+h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+.container-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.text-block {
+    flex: 1;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pour inverser l'ordre des sections */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* RESPONSIVE : Affichage en colonne sur petits écrans */
+@media (max-width: 768px) {
+    .container-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .reverse {
+        flex-direction: column;
+    }
+}
+
 
