@@ -11,69 +11,110 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#97cbdc;
+    background-color:#004581;
 }
 
-.text h3 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+/* HEADER*/
 
+/* Base header */
 header {
     width: 100%;
-    padding: 20px;
+    padding-bottom: unset;
     background-color: #333;
     color: #004581;
     text-align: center;
+    position:fixed;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-    header .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 15px;
-    }
 
-.centered-section {
-    width: 100%;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.bordered-section {
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #004581;
+/* container general pour le header */
+.bigContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    max-width: 60%;
-}
-
-.content-row {
-    display: flex;
+    width:33%;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
 }
 
-    .content-row .media,
-    .content-row .text {
-        flex: 1;
-        margin: 10px;
-    }
+/* container partie gauche header */
+.bigContainer:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
 
-        .content-row .media iframe,
-        .content-row .media img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
+/* container partie droite header */
+.bigContainer:nth-child(3){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container avec les items a droite */
+.bigContainerItem{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: unset;
+    margin: unset;
+    gap:30%;
+}
+
+/* reglages bouton voir le projet */
+.bigContainer a{
+    display: flex;
+    margin: 10px;
+    margin-bottom:30px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #1a64a5;
+}
+
+.bigContainer a:hover{
+    background: #004581;
+}
+
+/* Titre du jeu header */
+header h1 {
+    text-align: center;
+    align-items: center;
+    margin: unset;
+    padding:unset;
+    font: 3em "bebas blue", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+/* Sous titre du jeu header */
+header h2{
+    text-align: center;
+    margin:0.5%;
+    font: 1em "montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform:uppercase;
+}
+
+
+/* PAGE PRINCIPALE */
+
+/* image de presentation du projet */
+.imgFullScreen {
+    width: 100%;
+    padding: 30px;
+}
+
+
+
+
+
+/* BOUTONS */
 
 .side-buttons {
     position: fixed;
@@ -129,10 +170,6 @@ header {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.underline {
-    text-decoration: underline;
-}
-
 .project-button {
     display: block;
     margin: 20px auto;
@@ -160,16 +197,15 @@ header {
 }
 
 
-/* Test */
+/* Informations generale sur le projet */
 
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    margin: auto;
+    margin: 3%;
     width:auto;
 }
 
@@ -190,7 +226,7 @@ header {
     margin: 10px auto;
 }
 
-.icon.role { background-color: #004581; color: white; }
+.icon.role { background-color: #6ea9bc; color: white; }
 .icon.duration { background-color: white; color: black; }
 .icon.tools { background-color: gray; color: white; }
 .icon.team { background-color: white; color: black; }
@@ -205,47 +241,83 @@ p {
     margin: 0;
 }
 
-
-
-
-.container-section {
+.containerGeneral{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    /* background-color: indianred; */
+    margin-bottom:5%;
+    gap:20px;
+}
+
+.containerExplication{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*background-color: mediumpurple;*/
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    max-width: 90%;
-    margin: auto;
+    height:auto;
+
 }
 
-.text-block {
-    flex: 1;
-    font-size: 18px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.image-block {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.image-block img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Pour inverser l'ordre des sections */
-.reverse {
+/* Ajustements version inversée */
+.containerExplication.reverse {
     flex-direction: row-reverse;
 }
 
-/* RESPONSIVE : Affichage en colonne sur petits écrans */
+.containerExplication.reverse .containerItem h2{
+    text-align: Left;
+}
+
+/* interieur explications */
+
+.containerItem {
+    display: flex;
+    flex-direction: column;
+    /*background-color: rebeccapurple;*/
+    justify-content: start;
+    margin: 4%;
+}
+
+/* titre paragraphe */
+.containerItem h2{
+    text-align: end;
+    align-items: flex-end;
+    font:2em "bebas neue", sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* texte paragraphe */
+.containerItem p{
+    text-align: justify;
+    font:
+            1vw "Montserrat",
+            sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+    color:white;
+}
+
+iframe{
+    border-radius:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE : Affichage en colonne sur petits écrans
 @media (max-width: 768px) {
     .container-section {
         flex-direction: column;
@@ -255,5 +327,5 @@ p {
         flex-direction: column;
     }
 }
-
+*/
 
