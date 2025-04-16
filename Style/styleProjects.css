@@ -308,6 +308,39 @@ iframe{
 
 
 
+body {
+    margin: 0;
+    position: relative;
+    min-height: 200vh; /* pour tester le scroll */
+    z-index: 1;
+}
+
+#decor-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Toujours derrière tout */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.decor-element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    transition: transform 0.1s ease-out, rotate 0.1s ease-out; /* Transition pour parallax et rotation */
+}
+
+
+
+
+
 
 
 
