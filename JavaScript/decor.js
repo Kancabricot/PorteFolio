@@ -1,18 +1,12 @@
-const imageSources = [
-    '../../Images/cdTurret/TOURELLE_BASE.png',
-    '../../Images/cdTurret/TOURELLE_CANON.png',
-    '../../Images/cdTurret/TOURELLE_ENCEINTE.png',
-    '../../Images/cdTurret/TOURELLE_FEU.png',
-    '../../Images/cdTurret/TOURELLE_GLADYS.png',
-    '../../Images/cdTurret/TOURELLE_GLUE.png',
-    '../../Images/cdTurret/TOURELLE_MARTEAU.png',
-    '../../Images/cdTurret/TOURELLE_NEIGE.png',
-    '../../Images/cdTurret/TOURELLE_TDE.png',
-    '../../Images/cdTurret/TOURELLE_TESLA.png',
-];
+
 
 const numberOfImages = 20;
+
 const container = document.getElementById('decor-background');
+
+// Récupère l'attribut data-images et le convertit en tableau JS
+const imageSources = JSON.parse(container.dataset.images);
+
 const placedElements = []; // Pour stocker les positions des éléments
 
 // Fonction pour appliquer la rotation aléatoire
@@ -52,8 +46,12 @@ for (let i = 0; i < numberOfImages; i++) {
     // Choisir une image au hasard
     div.style.backgroundImage = `url(${imageSources[Math.floor(Math.random() * imageSources.length)]})`;
 
-    const width = 100;  // Largeur de l'image
-    const height = 100; // Hauteur de l'image
+    const scale = getRandomInt(150,50);
+
+    console.log(scale);
+
+    const width = scale;  // Largeur de l'image
+    const height = scale;  // Hauteur de l'image
     const { x, y } = getNonOverlappingPosition(width, height); // Position non chevauchante
 
     div.style.left = `${x}px`;
@@ -63,6 +61,9 @@ for (let i = 0; i < numberOfImages; i++) {
     const rotation = getRandomRotation();
     div.style.transform = `rotate(${rotation})`; // Appliquer la rotation initiale
 
+    div.style.width = `${scale}px`;
+    div.style.height = `${scale}px`;
+
     // Stocker des données supplémentaires pour chaque image
     div.dataset.baseY = y;  // Position initiale en Y
     div.dataset.speed = 0.2 + Math.random() * 0.5;  // Vitesse aléatoire pour la parallaxe
@@ -71,6 +72,11 @@ for (let i = 0; i < numberOfImages; i++) {
     container.appendChild(div);
 }
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);     // arrondit vers le haut
+    max = Math.floor(max);    // arrondit vers le bas
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 // Gérer la parallaxe au scroll
 /**window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;

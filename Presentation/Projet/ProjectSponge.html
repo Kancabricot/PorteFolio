@@ -9,6 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<div id="decor-background"
+     data-images='["../../Images/sBubble/Bubble01.png",
+       "../../Images/sBubble/Bubble02.png"]'>
+</div>
+
 <header>
     <div class="bigContainer">
         <img src="../../Images/SpongJauneLogo.png"/>
@@ -24,6 +30,7 @@
            <a href="../../index.html" class="home-button">See Project</a>
         </div>
     </div>
+
 
 
 </header>
@@ -114,7 +121,7 @@
         <div class="containerItem">
             <div class="media">
                 <img src="../../Images/SpongeFillAndShoot.gif" alt="Sponge Shoot">
-                <img src="../../Images/SpongeUltimate.gif" alt="Sponge Shoot">
+                <img src="../../Images/SpongeUltimate.gif" alt="Sponge Ultimate">
             </div>
         </div>
         <div class="containerItem">
@@ -132,10 +139,62 @@
     </div>
 </div>
 
+<!-- section 3 -->
+<div class="containerGeneral">
+
+    <div class="containerExplication">
+        <div class="containerItem">
+            <div class="media">
+                <img src="../../Images/SpongeRVT.gif" alt="Sponge RVT" width="1000">
+            </div>
+        </div>
+        <div class="containerItem">
+            <h2>RVT</h2>
+            <p>
+                <br>
+                Pour avoir un effet de salisurre et un netoyage precis et jolie, nous avons décider d’éviter les decals pour priviligier les RVT (Runtime Virtual Texture) qui permet de baker des textures pour les réutilisé dans d’autre matériaux. Ca sert par exemple a faire une fusion visuelle pour mieux intégré un objet dans un decors
+                <br>
+                <br>
+                Le personnage, les bulle et les ennemis on tous des brush en dessous d’eux qui permet de peindre la texture du RTV ce qui la salit (en rouge) ou la nettoie (en noir)
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- section 4 -->
+<div class="containerGeneral">
+
+    <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
+        <div class="containerItem">
+            <div class="media">
+                <img src="../../Images/ScaledRTV.png" alt="Sponge Shoot" width="800">
+            </div>
+        </div>
+        <div class="containerItem">
+            <h2>Optimisation</h2>
+            <p>
+                <br>
+                On gagne des point quand on a le plus de surface du mur propre. Pour cela on regarde la texture de rvt et on calcule le pourcentage de salissure visible sur celle si et pour être précis on le fait pixel par pixel. Le problème est niveau optimisation car faire le calcule sur chaque pixel de la texture est lourd.
+                <br>
+                <br>
+                On utilise donc une plus petite texture ou l’on reporte la texture RVT pour avoir des calcules bien moins lourd et donc éviter les lags sur la machine qu’on nous as donnée pour l’évènement.
+                <br>
+                <br>
+                Ce qui permet d’au lieu de verifié 2048 px pour une texture de 1024 * 1024 px (image à droite) pour avoir une bonne qu’alité en jeu, on vérifie uniquement 128 px avec une texture dédiée au calcule uniquement de 64 * 64 px (en bas à gauche de l’image) ce qui fait une différence de 1920 px qui ne sont pas calculer. Ce qui réduits la précision mais c'est acceptable pour ce que l'on gagne en calcule.
+                <br>
+            </p>
+        </div>
+
+    </div>
+</div>
+
 
 <a href="../../index.html" class="home-button">Retour à l'accueil</a>
 
-
+<script src="../../JavaScript/decor.js"></script>
 
 </body>
 </html>
