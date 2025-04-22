@@ -101,13 +101,13 @@
         <div class="containerItem">
             <p>
                 <br>
-                Sponge est une commende de la mairie de Montpellier pour un evenement annuelle s’intitulant “Coeur de Ville en Lumière” , le principe était de faire un jeu deux joueurs qui dure 3 minutes sur le mur de l’amphithéatre de l’Agora a Montpellier.
+                Sponge was a project commissioned by the city of Montpellier for their annual event “Cœur de Ville en Lumière.” The goal was to create a 2-player game lasting 3 minutes, projected onto the wall of the Agora amphitheater in Montpellier.
                 <br>
                 <br>
-                Nous incarnons des éponge devant néttoyer le mur tout en tuants les monstres qui reviennes le salir. Le but est de marquer le plus de points  pour le tableau des scores.
+                Players control sponges that must clean the wall while fighting off monsters that keep trying to make it dirty again. The objective is to score as many points as possible for the leaderboard.
                 <br>
                 <br>
-                C’était un projet auxilière a faire en même temp que notre projet de fin d’étude.
+                It was a side project developed alongside our final year project.
                 <br>
             </p>
         </div>
@@ -129,10 +129,10 @@
             <h2>Player</h2>
             <p>
                 <br>
-                En tant qu'éponge nous nous frotons au sol pour nous déplacer ce qui néttoyer automatiquement le sol, mais nous pouvons aussi nous gorgée d'eau dans des lavabos pour ensuite la cracher des bulles qui nettoies le sol mais aussi pour tuer les monstre !
+                As sponges, we scrub the floor as we move, automatically cleaning it. But we can also soak up water from sinks and spit out bubbles to clean the floor — and even defeat monsters!
                 <br>
                 <br>
-                Nous avons aussi un pouvoir ultime qui se charge en tuant des monstres pour lancer de grosse bulle qui explose au sol pour faire du néttoyage de zone ou même des dégats de zone.
+                We also have an ultimate ability that charges by defeating enemies. Once ready, it lets us launch a giant bubble that explodes on the ground, cleaning a large area and dealing area-of-effect damage.
                 <br>
             </p>
         </div>
@@ -153,11 +153,10 @@
             <h2>RVT</h2>
             <p>
                 <br>
-                Pour avoir un effet de salisurre et un netoyage precis et jolie, nous avons décider d’éviter les decals pour priviligier les RVT (Runtime Virtual Texture) qui permet de baker des textures pour les réutilisé dans d’autre matériaux. Ca sert par exemple a faire une fusion visuelle pour mieux intégré un objet dans un decors
+                To achieve a dirtying effect and a precise, clean visual, we decided to avoid using decals and instead opted for RVT (Runtime Virtual Texture), which allows baking textures to reuse them in other materials. It's useful, for example, to visually blend objects more naturally into the environment.
                 <br>
                 <br>
-                Le personnage, les bulle et les ennemis on tous des brush en dessous d’eux qui permet de peindre la texture du RTV ce qui la salit (en rouge) ou la nettoie (en noir)
-                <br>
+                The character, bubbles, and enemies all have brushes under them that paint on the RVT texture — either dirtying it (in red) or cleaning it (in black).
                 <br>
             </p>
         </div>
@@ -178,13 +177,13 @@
             <h2>Optimisation</h2>
             <p>
                 <br>
-                On gagne des point quand on a le plus de surface du mur propre. Pour cela on regarde la texture de rvt et on calcule le pourcentage de salissure visible sur celle si et pour être précis on le fait pixel par pixel. Le problème est niveau optimisation car faire le calcule sur chaque pixel de la texture est lourd.
+                Points are earned by having the cleanest surface area on the wall. To determine this, we analyze the RVT texture and calculate the percentage of visible dirt — pixel by pixel, for accuracy. However, this method is quite heavy in terms of performance.
                 <br>
                 <br>
-                On utilise donc une plus petite texture ou l’on reporte la texture RVT pour avoir des calcules bien moins lourd et donc éviter les lags sur la machine qu’on nous as donnée pour l’évènement.
+                To optimize, we use a smaller texture that mirrors the RVT, allowing for much lighter calculations and preventing lag on the hardware provided for the event.
                 <br>
                 <br>
-                Ce qui permet d’au lieu de verifié 2048 px pour une texture de 1024 * 1024 px (image à droite) pour avoir une bonne qu’alité en jeu, on vérifie uniquement 128 px avec une texture dédiée au calcule uniquement de 64 * 64 px (en bas à gauche de l’image) ce qui fait une différence de 1920 px qui ne sont pas calculer. Ce qui réduits la précision mais c'est acceptable pour ce que l'on gagne en calcule.
+                Instead of checking 2048 pixels on a 1024x1024 texture (top right image) for high in-game quality, we only check 128 pixels using a dedicated 64x64 texture (bottom left image) for calculations. This saves 1920 pixels from being processed. While it slightly reduces precision, the performance gain makes it well worth it.
                 <br>
             </p>
         </div>
@@ -193,7 +192,7 @@
 </div>
 
 
-<a href="../../index.html" class="home-button">Retour à l'accueil</a>
+<a href="../../index.html" class="home-button">Home</a>
 
 <script src="../../JavaScript/decor.js"></script>
 

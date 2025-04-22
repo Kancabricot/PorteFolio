@@ -17,7 +17,7 @@
 
         <header>
             <div class="bigContainer">
-                <img src="../../Images/SpongJauneLogo.png"/>
+                <img src="../../Images/mazePlayerLogo.png"/>
             </div>
 
             <div class="bigContainer">
@@ -25,7 +25,7 @@
                 <h2>Full C++ without engine</h2>
             </div>
             <div class="bigContainer">
-                <img src="../../Images/SpongVertLogo.png"/>
+                <img src="../../Images/mazeEnemyLogo.png"/>
                 <div class="bigContainerItem">
                     <a href="../../index.html" class="home-button">See Project</a>
                 </div>
@@ -96,13 +96,10 @@
                 <div class="containerItem">
                     <p>
                         <br>
-
+                        Maze is a game made without a game engine or graphics library; it was created entirely using ASCII, specifically with colored squares.
                         <br>
                         <br>
-
-                        <br>
-                        <br>
-
+                        The goal is to progress through a randomly generated maze, climbing floors until reaching the exit — all while avoiding enemies.
                         <br>
                     </p>
                 </div>
@@ -116,19 +113,31 @@
             <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
                 <div class="containerItem">
                     <div class="media">
-                        <img src="../../Images/SpongeFillAndShoot.gif" alt="Sponge Shoot">
-                        <img src="../../Images/SpongeUltimate.gif" alt="Sponge Ultimate">
+                        <img src="../../Images/MazeCreation.gif" alt="Maze creation">
                     </div>
                 </div>
                 <div class="containerItem">
-                    <h2>Player</h2>
+                    <h2>Maze creation</h2>
                     <p>
                         <br>
-                        En tant qu'éponge nous nous frotons au sol pour nous déplacer ce qui néttoyer automatiquement le sol, mais nous pouvons aussi nous gorgée d'eau dans des lavabos pour ensuite la cracher des bulles qui nettoies le sol mais aussi pour tuer les monstre !
+                        The maze is generated using Kruskal's algorithm, which creates a simple maze (with only one possible path to the end).
                         <br>
                         <br>
-                        Nous avons aussi un pouvoir ultime qui se charge en tuant des monstres pour lancer de grosse bulle qui explose au sol pour faire du néttoyage de zone ou même des dégats de zone.
+                        To solve this problem, I randomly removed several walls in the maze, making it more complex. As you go up through the levels, their size decreases.
                         <br>
+                        <br>
+                        To solve this problem, I randomly removed several walls in the maze, making it more complex. As you go up through the levels, their size decreases.
+                        <br>
+                        <br>
+                        The game is fully modular, which allowed us to create difficulty modes by increasing the maze size, the number of enemies, and the number of floors.
+                        <br>
+                        <br>
+                        We also added a “custom” mode where players can define these variables themselves to tailor the experience as they like.
+                        <br>
+                        <br>
+                        They can even recreate the same maze using a seed system to control the randomness.
+                        <br>
+
                     </p>
                 </div>
 
@@ -145,14 +154,13 @@
                     </div>
                 </div>
                 <div class="containerItem">
-                    <h2>RVT</h2>
+                    <h2>Saving and loading game</h2>
                     <p>
                         <br>
-                        Pour avoir un effet de salisurre et un netoyage precis et jolie, nous avons décider d’éviter les decals pour priviligier les RVT (Runtime Virtual Texture) qui permet de baker des textures pour les réutilisé dans d’autre matériaux. Ca sert par exemple a faire une fusion visuelle pour mieux intégré un objet dans un decors
+                        The player can save at any time while in the maze, which stores the current maze layout, collected items, their position, and the enemies’ positions. This way, they can resume exactly where they left off!
                         <br>
                         <br>
-                        Le personnage, les bulle et les ennemis on tous des brush en dessous d’eux qui permet de peindre la texture du RTV ce qui la salit (en rouge) ou la nettoie (en noir)
-                        <br>
+                        To do this, we write all the necessary data to a text file. When the player wants to continue, we simply read the file and recreate the state from that information.
                         <br>
                     </p>
                 </div>
@@ -160,35 +168,8 @@
 
         </div>
 
-        <!-- section 4 -->
-        <div class="containerGeneral">
 
-            <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
-                <div class="containerItem">
-                    <div class="media">
-                        <img src="../../Images/ScaledRTV.png" alt="Sponge Shoot" width="800">
-                    </div>
-                </div>
-                <div class="containerItem">
-                    <h2>Optimisation</h2>
-                    <p>
-                        <br>
-                        On gagne des point quand on a le plus de surface du mur propre. Pour cela on regarde la texture de rvt et on calcule le pourcentage de salissure visible sur celle si et pour être précis on le fait pixel par pixel. Le problème est niveau optimisation car faire le calcule sur chaque pixel de la texture est lourd.
-                        <br>
-                        <br>
-                        On utilise donc une plus petite texture ou l’on reporte la texture RVT pour avoir des calcules bien moins lourd et donc éviter les lags sur la machine qu’on nous as donnée pour l’évènement.
-                        <br>
-                        <br>
-                        Ce qui permet d’au lieu de verifié 2048 px pour une texture de 1024 * 1024 px (image à droite) pour avoir une bonne qu’alité en jeu, on vérifie uniquement 128 px avec une texture dédiée au calcule uniquement de 64 * 64 px (en bas à gauche de l’image) ce qui fait une différence de 1920 px qui ne sont pas calculer. Ce qui réduits la précision mais c'est acceptable pour ce que l'on gagne en calcule.
-                        <br>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <a href="../../index.html" class="home-button">Retour à l'accueil</a>
+        <a href="../../index.html" class="home-button">Home</a>
 
         <script src="../../JavaScript/decor.js"></script>
 
