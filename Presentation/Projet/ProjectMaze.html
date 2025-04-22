@@ -1,83 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation du Projet de Jeu</title>
-    <link rel="stylesheet" href="../../Style/styleProjects.css">
-    <script src="../../JavaScript/scriptPresentationPage.js"></script>
-</head>
-<body>
-    <header>
-        <div class="centered-content">
-            <h1> Maze </h1>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Maze | Timothée Fontan</title>
+            <link rel="icon" type="image/png" href="../../images/logoSlime.png">
+            <link rel="stylesheet" href="../../Style/styleProjects.css">
+            <script src="../../JavaScript/scriptPresentationPage.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+
+        <div id="decor-background"
+             data-images='["../../Images/mazeBG.png"]'>
         </div>
-    </header>
 
-    <!-- Boutons de navigation latéraux -->
-    <div class="side-buttons">
-        <!-- page précedante -->
-        <a href="ProjectMara.html" class="nav-button">❮</a>
-        <!-- page suivante -->
-        <a href="ProjectListrik.html" class="nav-button">❮</a>
-    </div>
-
-    <!-- Présentation du jeu -->
-    <section class="bordered-section" id="presentation"><h2>Présentation du Jeu</h2>
-        <div class="content-row">
-
-            <div class="media">
-                <iframe src="https://www.youtube.com/embed/QCu2Mbn_P-4?si=7iRta_DJ6OvzGcZQ" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <header>
+            <div class="bigContainer">
+                <img src="../../Images/SpongJauneLogo.png"/>
             </div>
-            <div class="text">
-                <p>Un jeu fait sans moteur, où l'on se déplace dans un labyrinthe à plusieurs étages pour en sortir. Des défis représentés par des mini-jeux seront là pour vous mettre des bâtons dans les roues, comme les boss.</p>
+
+            <div class="bigContainer">
+                <h1> Maze </h1>
+                <h2>Full C++ without engine</h2>
+            </div>
+            <div class="bigContainer">
+                <img src="../../Images/SpongVertLogo.png"/>
+                <div class="bigContainerItem">
+                    <a href="../../index.html" class="home-button">See Project</a>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <!-- Boutons de navigation latéraux -->
+        <div class="side-buttons">
+            <!-- page précedante -->
+            <a href="ProjectMara.html" class="nav-button"><img src="../../Images/ArrowLeft.png"/></a>
+            <!-- page suivante -->
+            <a href="ProjectListrik.html" class="nav-button"><img src="../../Images/ArrowRight.png"/></a>
+        </div>
+
+
+        <!-- image du jeu -->
+        <div class="ImgFullScreen">
+            <img src="../../Images/mazePresentationPage.png"height=auto width=1920 />
+        </div>
+
+        <!-- Informations generale sur le projet -->
+        <div class="container">
+            <div class="item">
+                <div class="icon role">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Role</h3>
+                <p>Gameplay Programer</p>
+            </div>
+            <div class="item">
+                <div class="icon duration">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Duration</h3>
+                <p>1 week</p>
+            </div>
+            <div class="item">
+                <div class="icon tools">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Tools</h3>
+                <p>Visual Studio</p>
+            </div>
+            <div class="item">
+                <div class="icon team">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Team</h3>
+                <p>3 programer</p>
+                <p>3 artists</p>
             </div>
         </div>
-    </section>
 
-    <!-- Présentation du travaille -->
-    <section class="bordered-section" id="mecanique">
-        <h2>Mécaniques créées</h2>
-        <div class="content-row">
-            <div class="text">
-                <h3> Création du labyrinthe </h3> <br>
-                <p>Je me suis principalement occupé de la génération procédurale du labyrinthe, avec tous les modificateurs possibles : la taille du labyrinthe, le nombre d'étages,
-                    et la création de seed pour permettre de retrouver des générations spécifiques. Grâce à cela, j'ai pu créer des préréglages de difficulté pour le début de la partie ainsi qu'une version personnalisable,
-                    permettant au joueur de configurer le labyrinthe comme il le souhaite pour ajuster la difficulté.</p>
+        <!-- Présentation du jeu -->
+
+        <!-- section 1 -->
+        <div class="containerGeneral">
+
+            <div class="containerExplication">
+                <div class="containerItem">
+                    <div class="media">
+                        <iframe src="https://www.youtube.com/embed/QCu2Mbn_P-4?si=S7vQnUeMDjq8dAqp" title="Vidéo de Maze" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="containerItem">
+                    <p>
+                        <br>
+
+                        <br>
+                        <br>
+
+                        <br>
+                        <br>
+
+                        <br>
+                    </p>
+                </div>
             </div>
-            <div class="media">
-                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+
+        </div>
+
+        <!-- section 2 -->
+        <div class="containerGeneral">
+
+            <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
+                <div class="containerItem">
+                    <div class="media">
+                        <img src="../../Images/SpongeFillAndShoot.gif" alt="Sponge Shoot">
+                        <img src="../../Images/SpongeUltimate.gif" alt="Sponge Ultimate">
+                    </div>
+                </div>
+                <div class="containerItem">
+                    <h2>Player</h2>
+                    <p>
+                        <br>
+                        En tant qu'éponge nous nous frotons au sol pour nous déplacer ce qui néttoyer automatiquement le sol, mais nous pouvons aussi nous gorgée d'eau dans des lavabos pour ensuite la cracher des bulles qui nettoies le sol mais aussi pour tuer les monstre !
+                        <br>
+                        <br>
+                        Nous avons aussi un pouvoir ultime qui se charge en tuant des monstres pour lancer de grosse bulle qui explose au sol pour faire du néttoyage de zone ou même des dégats de zone.
+                        <br>
+                    </p>
+                </div>
+
             </div>
         </div>
-        <div class="content-row">
-            <div class="media">
-                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+
+        <!-- section 3 -->
+        <div class="containerGeneral">
+
+            <div class="containerExplication">
+                <div class="containerItem">
+                    <div class="media">
+                        <img src="../../Images/SpongeRVT.gif" alt="Sponge RVT" width="1000">
+                    </div>
+                </div>
+                <div class="containerItem">
+                    <h2>RVT</h2>
+                    <p>
+                        <br>
+                        Pour avoir un effet de salisurre et un netoyage precis et jolie, nous avons décider d’éviter les decals pour priviligier les RVT (Runtime Virtual Texture) qui permet de baker des textures pour les réutilisé dans d’autre matériaux. Ca sert par exemple a faire une fusion visuelle pour mieux intégré un objet dans un decors
+                        <br>
+                        <br>
+                        Le personnage, les bulle et les ennemis on tous des brush en dessous d’eux qui permet de peindre la texture du RTV ce qui la salit (en rouge) ou la nettoie (en noir)
+                        <br>
+                        <br>
+                    </p>
+                </div>
             </div>
-            <div class="text">
-            <h3> Système de sauvegarde </h3> <br>
-            <p>J'ai également mis en place un système de sauvegarde, qui fonctionne en lisant et en écrivant un fichier texte. Cela permet de conserver en mémoire l’état du labyrinthe,
-                avec la position de tous les défis, la sortie, la position du joueur, le brouillard de guerre, ainsi que l’inventaire et les points de vie du joueur.</p>
-        </div>
-        </div>
-    </section>
 
-    <!-- Section Outils de Travail -->
-    <section class="bordered-section" id="tools">
-        <h2>Outils de Travail</h2>
-        <div class="content-row">
-            <p>Pour réaliser ce projet, j'ai travaillé uniquement en C++ avec un simple IDE.</p>
         </div>
-    </section>
 
-    <!-- Section Apprentissage -->
-    <section class="bordered-section" id="experience">
-        <h2>Ce que le Projet m'a Apporté</h2>
-        <div class="content-row">
-            <p>À comprendre comment rendre modulaire ce que je programme pour pouvoir le réutiliser ou le changer selon quelques variables.</p>
+        <!-- section 4 -->
+        <div class="containerGeneral">
+
+            <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
+                <div class="containerItem">
+                    <div class="media">
+                        <img src="../../Images/ScaledRTV.png" alt="Sponge Shoot" width="800">
+                    </div>
+                </div>
+                <div class="containerItem">
+                    <h2>Optimisation</h2>
+                    <p>
+                        <br>
+                        On gagne des point quand on a le plus de surface du mur propre. Pour cela on regarde la texture de rvt et on calcule le pourcentage de salissure visible sur celle si et pour être précis on le fait pixel par pixel. Le problème est niveau optimisation car faire le calcule sur chaque pixel de la texture est lourd.
+                        <br>
+                        <br>
+                        On utilise donc une plus petite texture ou l’on reporte la texture RVT pour avoir des calcules bien moins lourd et donc éviter les lags sur la machine qu’on nous as donnée pour l’évènement.
+                        <br>
+                        <br>
+                        Ce qui permet d’au lieu de verifié 2048 px pour une texture de 1024 * 1024 px (image à droite) pour avoir une bonne qu’alité en jeu, on vérifie uniquement 128 px avec une texture dédiée au calcule uniquement de 64 * 64 px (en bas à gauche de l’image) ce qui fait une différence de 1920 px qui ne sont pas calculer. Ce qui réduits la précision mais c'est acceptable pour ce que l'on gagne en calcule.
+                        <br>
+                    </p>
+                </div>
+
+            </div>
         </div>
-    </section>
 
-    <a href="../../index.html" class="home-button">Retour à l'accueil</a>
 
-</body>
+        <a href="../../index.html" class="home-button">Retour à l'accueil</a>
+
+        <script src="../../JavaScript/decor.js"></script>
+
+        </body>
 </html>
