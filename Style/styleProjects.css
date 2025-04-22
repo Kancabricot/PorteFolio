@@ -300,6 +300,11 @@ p {
     color:white;
 }
 
+.containerItemToSide{
+    display: flex;
+    flex-direction: row;
+}
+
 iframe{
     border-radius:20px;
     width: 800px;
