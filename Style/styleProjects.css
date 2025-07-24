@@ -105,9 +105,14 @@ header h2{
 /* PAGE PRINCIPALE */
 
 /* image de presentation du projet */
-.imgFullScreen {
+.ImgFullScreen {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ImgFullScreen img{
     width: 100%;
-    padding: 30px;
 }
 
 
@@ -198,6 +203,12 @@ header h2{
 
 /* Informations generale sur le projet */
 
+body h1 {
+    font: 4em "bebas blue", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -206,6 +217,7 @@ header h2{
     border-radius: 10px;
     margin: 3%;
     width:auto;
+    background-color: #333;
 }
 
 .item {
@@ -269,6 +281,8 @@ p {
     text-align: Left;
 }
 
+
+
 /* interieur explications */
 
 .containerItem {
@@ -293,11 +307,15 @@ p {
 .containerItem p{
     text-align: justify;
     font:
-            1vw "Montserrat",
+            1.1vw "Montserrat",
             sans-serif;
     font-weight: lighter;
     line-height: 1.5;
     color:white;
+}
+
+.containerItem img{
+    width: 30vw;
 }
 
 .containerItemToSide{
@@ -307,8 +325,9 @@ p {
 
 iframe{
     border-radius:20px;
-    width: 800px;
-    height: 500px;
+    height: 250px;
+    width: 400px;
+
 
 }
 
