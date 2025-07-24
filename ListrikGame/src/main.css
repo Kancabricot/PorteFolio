@@ -1,0 +1,47 @@
+body{
+    font-family: Impact, DejaVu Sans;
+    font-size: 14px;
+    background-color: rgba(82, 9, 96, 0);
+    text-align: center;
+    background-position:100% 50%;
+
+
+}
+a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 1s;
+}
+a:hover{
+    color: rgba(255, 0, 0, 0);
+    text-decoration: underline;
+}
+
+#game{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+canvas{
+    outline: 5px solid rgb(0, 0, 0);
+}
+#scores{
+    color: rgba(255, 0, 0, 0);
+    font-size : 3vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.score{
+    color: #ffffff
+}
+.name{
+    font-size: 3vw;
+}

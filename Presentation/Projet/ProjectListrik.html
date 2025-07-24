@@ -3,63 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation du Projet de Jeu</title>
+    <title>Sponge | Timothée Fontan</title>
+    <link rel="icon" type="image/png" href="../../images/logoSlime.png">
     <link rel="stylesheet" href="../../Style/styleProjects.css">
     <script src="../../JavaScript/scriptPresentationPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="../../ListrikGame/src/ScrollDelete.js"></script>
 </head>
 <body>
-    <header>
-        <div class="centered-content">
-            <h1> Listrik </h1>
-        </div>
-    </header>
 
-    <!-- Boutons de navigation latéraux -->
-    <div class="side-buttons">
-        <!-- page précedante -->
-        <a href="ProjectMaze.html" class="nav-button">❮</a>
-        <!-- page suivante -->
-        <a href="ProjectCoreDefender.html" class="nav-button">❮</a>
+<div id="decor-background"
+     data-images='["../../Images/ListrickBG/ListrikBAtt.png",
+        "../../Images/ListrickBG/ListrikP.png",
+        "../../Images/ListrickBG/gendown.png",
+        "../../Images/ListrickBG/Pile.png"]'>
+</div>
+
+<header>
+    <div class="bigContainer">
+        <img src="../../Images/ListrikLogo.png"/>
     </div>
 
-    <!-- Présentation du jeu -->
-    <section class="bordered-section" id="presentation"><h2>Présentation du Jeu</h2>
-        <div class="content-row">
+    <!-- Titre -->
+    <div class="bigContainer">
+        <h1> Listrik </h1>
+        <h2>First game & Web game</h2>
+    </div>
+    <div class="bigContainer">
+        <img src="../../Images/ListrikBatLogo.png"/>
+        <div class="bigContainerItem">
+            <a href="../../index.html" class="home-button">See Project</a>
+        </div>
+    </div>
 
+
+
+</header>
+
+<!-- Boutons de navigation latéraux -->
+<div class="side-buttons">
+    <!-- page précedante -->
+    <a href="ProjectMaze.html" class="nav-button"><img src="../../Images/ArrowLeft.png"/></a>
+    <!-- page suivante -->
+    <a href="ProjectCoreDefender.html" class="nav-button"><img src="../../Images/ArrowRight.png"/></a>
+</div>
+
+
+<!-- image du jeu -->
+<div class="ImgFullScreen">
+    <img src="../../Images/ListrikPresentationPage.png"height=auto width=1920>
+</div>
+
+<!-- Informations generale sur le projet -->
+<div class="container">
+    <div class="item">
+        <div class="icon role">
+            <i class="fas fa-user"></i>
+        </div>
+        <h3>Role</h3>
+        <p>Gameplay Programer</p>
+        <p>Game designer</p>
+        <p>Level designer</p>
+        <p>2D artist</p>
+    </div>
+    <div class="item">
+        <div class="icon duration">
+            <i class="fas fa-clock"></i>
+        </div>
+        <h3>Duration</h3>
+        <p>3 weeks</p>
+    </div>
+    <div class="item">
+        <div class="icon tools">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <h3>Tools</h3>
+        <p>Visual Studio</p>
+        <p>Phaser 3</p>
+    </div>
+    <div class="item">
+        <div class="icon team">
+            <i class="fas fa-users"></i>
+        </div>
+        <h3>Team</h3>
+        <p>Solo developement</p>
+    </div>
+</div>
+
+<!-- Présentation du jeu -->
+
+<!-- section 1 -->
+<div class="containerGeneral">
+
+    <h1> Play the game ! </h1>
+    <p> For jump use Z or W. </p>
+
+    <div class="containerExplication">
+        <div class="containerItem">
             <div class="media">
-                <iframe src="https://www.youtube.com/embed/video_id" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="text">
-                <p>Notre jeu est un RPG d'aventure immersif où le joueur incarne un héros... (texte de présentation).</p>
+                <script type="text/javascript" src="../../ListrikGame/lib/phaser.js"></script>
+                <script type="text/javascript" src="../../ListrikGame/src/Tableau1.js"></script>
+                <script type="text/javascript" src="../../ListrikGame/src/UI.js"></script>
+
+                <script type="text/javascript" src="../../ListrikGame/src/main.js"></script>
+
+                <script src="../../ListrikGame/src/Player.js"></script>
+
+                <link rel="stylesheet" href="../../ListrikGame/src/main.css">
+
+                <div id="game" tabindex="0"></div>
+
+                <script type="text/javascript" src="../../ListrikGame/src/ScrollDelete.js"></script>
             </div>
         </div>
-    </section>
 
-    <section class="bordered-section" id="mecanique">
-        <h2>Mécanique créer</h2>
-        <div class="content-row">
-            <div class="text">
-                <p>Dans ce jeu, le joueur peut interagir avec un monde dynamique... (autre partie de présentation).</p>
-            </div>
+    </div>
+
+    <div class="containerItem">
+        <p>
+            <br>
+            Listrik is my very first video game project, which I developed entirely on my own. It gave me the opportunity to explore and experiment with all the stages of video game production, from start to finish.
+            <br>
+            <br>
+            This is a single-player puzzle-platformer where the goal is to solve levels designed around a battery mechanic carried by a small robot named Listrik.
+            <br>
+            <br>
+            The game was designed to run as a web page using JavaScript and the Phaser 3 framework.
+            <br>
+        </p>
+    </div>
+
+</div>
+
+<!-- section 2 -->
+<div class="containerGeneral">
+
+    <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
+        <div class="containerItem">
             <div class="media">
-                <img src="path/to/game-demo.gif" alt="Démo GIF du jeu">
+                <img src="../../Images/ListrikPlayer.png" alt="Sponge Shoot" width="800">
             </div>
         </div>
-    </section>
+        <div class="containerItem">
+            <h2>Player</h2>
+            <p>
+                <br>
+                You play as a small robot named Listrik who has a malfunctioning internal battery. To stay powered, he must carry an external battery that slows him down and prevents him from jumping due to its weight.
+                <br>
+                <br>
+                This same battery is also used to activate devices that help him progress through the level. The challenge is to stay alive while solving puzzles and navigating each room.
+                <br>
+            </p>
+        </div>
 
-    <!-- Section Outils de Travail -->
-    <section class="bordered-section" id="tools">
-        <h2>Outils de Travail</h2>
-        <p>Pour réaliser ce projet, nous avons utilisé Unity pour le moteur de jeu, Blender pour la modélisation 3D, et Adobe Photoshop pour les textures. Le langage principal de développement est C# pour la logique du jeu et le scripting. Nous avons également utilisé Git pour le contrôle de version et Trello pour la gestion des tâches.</p>
-    </section>
+    </div>
+</div>
 
-    <!-- Section Apprentissage -->
-    <section class="bordered-section" id="experience">
-        <h2>Ce que le Projet m'a Apporté</h2>
-        <p>Ce projet m'a permis d'améliorer mes compétences en gestion de projet et en développement de jeu. J'ai appris à travailler en équipe, à organiser mon code de manière efficace, et à optimiser les performances du jeu pour une meilleure expérience utilisateur. Ce projet a renforcé ma confiance en mes capacités de développement.</p>
-    </section>
 
-    <a href="../../index.html" class="home-button">Retour à l'accueil</a>
+<!-- section 3 -->
+<div class="containerGeneral">
+
+    <div class="containerExplication reverse"> <!-- Ajouter un reverse ici inverse l'ordre paragraphe/image -->
+        <div class="containerItem">
+            <div class="media">
+                <img src="../../Images/LevelDesignListrik.png" alt="Sponge Shoot" width="800">
+            </div>
+        </div>
+        <div class="containerItem">
+            <h2>Level design</h2>
+            <p>
+                <br>
+                Levels were designed using Tiled, which allowed me to export JSON map files and integrate them easily into Phaser.
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- section 4 -->
+    <div class="containerGeneral">
+
+        <div class="containerExplication">
+            <div class="containerItem">
+                <div class="media">
+                    <img src="../../Images/ListrikHUB.gif" alt="Sponge Shoot" width="500">
+                </div>
+            </div>
+            <div class="containerItem">
+                <h2>Diegetic Interface</h2>
+                <p>
+                    <br>
+                    I aimed to make the game fully diegetic. The menu and tutorial are part of the game world itself. For example, I initially tried to display the battery level through a lightning icon on the robot’s back.
+                    <br>
+                    <br>
+                    However, it wasn’t clear enough for players, so I added a more traditional UI element to display it.
+                    <br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<a href="../../index.html" class="home-button">Home</a>
+
+<script src="../../JavaScript/decor.js"></script>
 
 </body>
 </html>
