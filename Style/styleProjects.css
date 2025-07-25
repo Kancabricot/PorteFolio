@@ -367,7 +367,43 @@ body {
 }
 
 
+/* >Core defenders turrets */
 
+.turretBigContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color : pink;
+    width: 70%;
+    padding: 20px;
+}
+
+.turretMiddleContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: red;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.turretLittleContainer{
+    display:flex;
+    flex-direction: row;
+    background-color:purple;
+    justify-content: space-around;
+}
+
+.turretLittleContainerImg{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr); /* 4 colonnes egales */
+    height:100%;
+}
+.turretLittleContainer img{
+    max-width: 100%;
+    object-fit: cover;
+
+}
 
 
 
